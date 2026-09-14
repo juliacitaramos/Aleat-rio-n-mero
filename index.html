@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteio de Números (10 a 20)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sorteio de Números</h1>
+        <p class="subtitle">Adivinhe o número sorteado entre 10 e 20!</p>
+        
+        <div class="score-board">
+            <span>Pontuação de Acertos: <strong id="score">0</strong></span>
+        </div>
+
+        <div class="game-box">
+            <button id="sortear-btn">Sortear Número</button>
+            
+            <div id="input-container" class="hidden">
+                <p class="hint">Qual número foi sorteado?</p>
+                <div class="input-group">
+                    <input type="number" id="palpite-input" min="10" max="20" placeholder="Digite de 10 a 20...">
+                    <button id="enviar-btn">Enviar</button>
+                </div>
+            </div>
+
+            <div id="resultado" class="message"></div>
+            
+            <div id="reveal-container" class="hidden">
+                <button id="novo-sorteio-btn">Jogar Novamente</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
